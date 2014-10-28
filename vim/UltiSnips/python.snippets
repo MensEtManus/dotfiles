@@ -1,0 +1,28 @@
+snippet shebang
+#!/usr/bin/env python
+endsnippet
+
+snippet func
+def $1($2):
+  $0
+endsnippet
+
+snippet class
+class $1:
+  
+  def __init__(self, $2):
+	$3
+
+  $0
+endsnippet
+
+snippet subclass
+class $1($2):
+  $0
+endsnippet
+
+snippet mainboiler
+# This is the standard boilerplate that calls the main() function.
+if __name__ == '__main__':
+  main()
+endsnippet
