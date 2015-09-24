@@ -3,10 +3,10 @@ syntax enable
 set backspace=indent,eol,start
 
 let g:Powerline_symbols = 'fancy'
-set encoding=utf-8
-set t_Co=256
-set term=xterm-256color
-set termencoding=utf-8
+"set encoding=utf-8
+"set t_Co=256
+"set term=xterm-256color
+"set termencoding=utf-8
 
 set laststatus=2
 set number
@@ -32,11 +32,16 @@ set number
 "set tabstop=2 shiftwidth=2 expandtab
 "set autoindent
 set modeline
-
+:set list lcs=tab:\|\ 
+let g:indentLine_char = '¦'
+let g:indentLine_color_term = 239
 "================ Solarized Color Theme Configuration =========
 "let g:solarized_termcolors=256
 "set background=dark
 colorscheme Tomorrow-Night-Eighties
+set background=dark
+"let g:solarized_termcolors = 256  " New line!!
+"colorscheme solarized
 
 "=============== Widget Configuration =======================
 :set guioptions-=r  "remove right-hand scroll bar
@@ -71,6 +76,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'Yggdroot/indentLine'
 
 Bundle 'altercation/vim-colors-solarized'
 
@@ -88,6 +94,8 @@ Bundle 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-fugitive'
 " Track the engine.
 Plugin 'SirVer/ultisnips'
+
+"Plugin 'Rip-Rip/clang_complete'
 
 " " Snippets are separated from the engine. Add this if you want them:
 " Plugin 'honza/vim-snippets'

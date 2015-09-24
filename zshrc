@@ -61,6 +61,7 @@ export PATH=$PATH:/Library/Frameworks/Python.framework/Versions/3.4/bin:/usr/loc
  
 export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages 
 #export PYTHONPATH="/usr/local/lib/python3.4/site-packages"
+#export PYTHONPATH=$PYTHONPATH:/Library/Python/2.7/site-packages
 
 #PYTHONPATH="/usr/local/lib/python3.4/site-packages"
 
