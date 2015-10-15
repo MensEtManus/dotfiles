@@ -3,10 +3,10 @@ syntax enable
 set backspace=indent,eol,start
 
 let g:Powerline_symbols = 'fancy'
-"set encoding=utf-8
-"set t_Co=256
+set encoding=utf-8
+set t_Co=256
 "set term=xterm-256color
-"set termencoding=utf-8
+set termencoding=utf-8
 
 set laststatus=2
 set number
@@ -36,7 +36,6 @@ set modeline
 let g:indentLine_char = '¦'
 let g:indentLine_color_term = 239
 "================ Solarized Color Theme Configuration =========
-"let g:solarized_termcolors=256
 "set background=dark
 colorscheme Tomorrow-Night-Eighties
 set background=dark
@@ -54,7 +53,7 @@ map <F2> :NERDTreeToggle<CR>
 ":let g:NERDTreeWinSize=40
 
 "================= ycm C family configuration ================
-let g:ycm_global_ycm_extra_conf = "~/.vim/Bundle/YouCompleteMe/.ycm_extra_conf.py"
+let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py"
 
 
 "======================== Scripts configs ===================
